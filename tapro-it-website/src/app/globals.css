@@ -32,6 +32,10 @@ html {
   font-family: 'SF Pro Display', sans-serif;
 }
 
+body{
+  background-color: rgba(248, 251, 254, 1);
+}
+
 /* HEADINGS */
 .h1 {
   font-family: 'Benzin-Medium', sans-serif;

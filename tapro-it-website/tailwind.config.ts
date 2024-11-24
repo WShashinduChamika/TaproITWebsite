@@ -15,11 +15,11 @@ export default {
         "TP-secondary-text":"rgba(176, 176, 176, 1)"
       },
       fontFamily: {
-        benzin: ['Benzin-Medium', 'sans-serif'],
-        sfpro: ['"SF Pro"', 'sans-serif'], // Ensure this exists for `font-sfpro`
+        font1: ['Benzin-Medium', 'sans-serif'],
+        font2: ['"SF Pro"', 'sans-serif'], 
       },
       fontWeight: {
-        regular: '400', // Defines `font-regular`
+        regular: '400',
       },
 
     },
