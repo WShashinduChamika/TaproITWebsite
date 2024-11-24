@@ -1,11 +1,16 @@
+import React, { FC } from 'react'
 import HeroSection from "@/components/home/HeroSection";
 
-export default function Home() {
+const Home: FC = () => {
   return (
-    <div className="w-full h-auto">
-       <section>
-         <HeroSection />
-       </section>
+    <div>
+      <div className="w-full h-auto">
+        <section>
+          <HeroSection />
+        </section>
+      </div>
     </div>
-  );
+  )
 }
+
+export default Home

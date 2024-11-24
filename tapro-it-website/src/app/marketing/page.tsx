@@ -1,6 +1,6 @@
-import React from 'react'
+import React,{FC} from 'react'
 
-const Marketing = () => {
+const Marketing:FC = () => {
   return (
     <div>
       Marketing Page

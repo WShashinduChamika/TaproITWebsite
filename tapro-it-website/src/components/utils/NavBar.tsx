@@ -1,8 +1,8 @@
 import Link from 'next/link'
-import React from 'react'
+import React,{FC} from 'react'
 import TextAnimateBtn from './TextAnimateBtn';
 
-const NavBar = () => {
+const NavBar:FC = () => {
   const btn = {
     href:"/",
     height: "3rem",
