@@ -1,6 +1,6 @@
-import React from 'react'
+import React,{FC} from 'react'
 
-const Development = () => {
+const Development:FC = () => {
   return (
     <div>
       Development Page

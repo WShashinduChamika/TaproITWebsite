@@ -1,6 +1,6 @@
-import React from 'react'
+import React,{FC} from 'react'
 
-const Design = () => {
+const Design:FC = () => {
   return (
     <div>
       Design Page

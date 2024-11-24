@@ -1,6 +1,6 @@
-import React from 'react';
+import React,{FC} from 'react';
 
-const HeroSection = () => {
+const HeroSection:FC = () => {
     return (
         <div className="relative w-full h-[89vh] bg-[url('/assets/images/banner.jpeg')] bg-cover bg-center rounded-lg">
             <div className="absolute inset-0 bg-gradient-to-b from-[rgba(0,0,0,0.6)] to-[rgba(0,0,0,0)] pointer-events-none rounded-xl"></div>
