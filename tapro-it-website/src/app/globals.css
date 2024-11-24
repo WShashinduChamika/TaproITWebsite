@@ -1,12 +1,76 @@
+/* global.css */
+
+/* Import Tailwind base, components, and utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
- 
+/* Custom Global Typography Styles */
+@font-face {
+  font-family: "Benzin-Medium";
+  src: url("/fonts/Benzin/benzin-medium.ttf") format("truetype");
+  font-weight: 500; /* Medium */
+  font-style: normal;
 }
 
+@font-face {
+  font-family: "SF Pro";
+  src: url("/fonts/SFPro/SFProDisplay-Regular.ttf") format("truetype");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
 
-body {
- 
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/SFPro/SFProDisplay-Light.ttf") format("truetype");
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+/* Global Typography Styles */
+html {
+  font-family: 'SF Pro Display', sans-serif;
+}
+
+body{
+  background-color: rgba(248, 251, 254, 1);
+}
+
+/* HEADINGS */
+.h1 {
+  font-family: 'Benzin-Medium', sans-serif;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.h2 {
+  font-family: 'Benzin-Medium', sans-serif;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.h3 {
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 400;
+}
+
+/* BODY TEXT */
+.b1 {
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 400;
+}
+
+.b2 {
+  font-family: 'SF Pro Display Light', sans-serif;
+  font-weight: 300;
+}
+
+.b3 {
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 400;
+}
+
+.b4 {
+  font-family: 'Benzin-Medium', sans-serif;
+  font-weight: 500;
 }
