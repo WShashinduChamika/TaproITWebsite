@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 
 const HeroSection: FC = () => {
     return (
-        <div className="relative mx-auto w-[95vw] h-[89vh] rounded-lg overflow-hidden">
+        <div className="relative mx-auto mb-10 w-[95vw] h-[89vh] rounded-lg overflow-hidden">
             <video 
                 className="absolute inset-0 w-full h-full object-cover pointer-events-none"
                 autoPlay
