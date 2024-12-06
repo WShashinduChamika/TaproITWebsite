@@ -1,5 +1,6 @@
+"use client";
 import Link from 'next/link';
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
 import { FaArrowRightLong } from 'react-icons/fa6';
 
 interface BtnProps {
@@ -8,21 +9,36 @@ interface BtnProps {
     height: string;
     width: string;
     bgClr: string;
+    hoverBgClr: string;
     text1: string;
     text2: string;
   };
 }
 
 const TextAnimateBtn: FC<BtnProps> = ({ btn }) => {
+  const [currentBgClr, setCurrentBgClr] = useState(btn.bgClr);
+
+  const handleMouseEnter = () => {
+    setCurrentBgClr(btn.hoverBgClr);
+  };
+
+  const handleMouseLeave = () => {
+    setCurrentBgClr(btn.bgClr);
+  };
+
   return (
     <Link href={btn.href}>
       <button
-        className={`group flex items-center gap-2 text-lg text-TP-primary-text rounded-lg overflow-hidden relative`}
+        className={`group flex items-center gap-2 text-lg text-TP-primary-text rounded-lg overflow-hidden relative ${
+          currentBgClr === 'transparent' ? 'border-[1px] border-TP-secondary-text' : ''
+        }`}
         style={{
-          backgroundColor: btn.bgClr,
           width: btn.width,
           height: btn.height,
+          backgroundColor: currentBgClr, // Use dynamic background color
         }}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
         <div className="absolute inset-0 opacity-100 flex items-center justify-center gap-2 transition-all duration-1000 group-hover:opacity-0 group-hover:translate-y-[-50%]">
           <p className="whitespace-nowrap">{btn.text1}</p>

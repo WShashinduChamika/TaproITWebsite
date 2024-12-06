@@ -8,6 +8,7 @@ const NavBar:FC = () => {
     height: "3rem",
     width: "11rem",
     bgClr:"rgba(30, 30, 30, 1)",
+    hoverBgClr:"rgba(30, 30, 30, 1)",
     text1:"Work With Us",
     text2:"Let's Talk"
   }

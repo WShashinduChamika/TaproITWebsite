@@ -36,6 +36,9 @@ body{
   background-color: rgba(248, 251, 254, 1);
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
 /* HEADINGS */
 .h1 {
   font-family: 'Benzin-Medium', sans-serif;
@@ -73,4 +76,14 @@ body{
 .b4 {
   font-family: 'Benzin-Medium', sans-serif;
   font-weight: 500;
+}
+
+/* Add this CSS */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+
+.hide-scrollbar {
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hides scrollbar in Internet Explorer */
 }
