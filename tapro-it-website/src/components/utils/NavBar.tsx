@@ -27,7 +27,7 @@ const NavBar:FC = () => {
     },
     {
       name:"About Us",
-      href:"/"
+      href:"/about"
     }
   ]
   return (
